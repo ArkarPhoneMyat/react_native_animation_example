@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, Text, StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {HomeScreen, StaggerOpacity} from './screens';
+import {HomeScreen, StaggerOpacity, FlatlistAnimation} from './screens';
 import { enableScreens } from 'react-native-screens';
 
 const Stack = createNativeStackNavigator();
@@ -22,6 +22,7 @@ function App() {
       }}
       >
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name='Flatlist Animation' component={FlatlistAnimation}/>
         <Stack.Screen name='Stagger Opacity' component={StaggerOpacity}/>
       </Stack.Navigator>
     </NavigationContainer>

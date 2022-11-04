@@ -35,8 +35,10 @@ const HomeScreen = (props) => {
             alignItems: 'center',
             backgroundColor: '#33E6FF',
             marginBottom: 10
-          }}>
-          <Text style={{color: 'white'}}>X axis and Y axis</Text>
+          }}
+          onPress={() => props.navigation.navigate('Flatlist Animation')}
+          >
+          <Text style={{color: 'white'}}>Flatlist</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{
